@@ -136,7 +136,7 @@ const About = () => {
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
             3 years ago, I began as an Associate software engineer. Since then,
-            I've done remote and hybrid work for Tesbious Technologies on
+            I&#39;ve done remote and hybrid work for Tesbious Technologies on
             digital products for business and consumer use.
           </motion.p>
           {/* counters */}
@@ -199,6 +199,7 @@ const About = () => {
             {aboutData.map((item, itemIndex) => {
               return (
                 <div
+                key={itemIndex}
                   className={`${
                     index === itemIndex &&
                     "text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300"
